@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Biosphere.Studios",
@@ -18,19 +19,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased dark`}
+    <html lang="en" suppressHydrationWarning>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem
+        disableTransitionOnChange
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
+        <body
+          className={`${GeistSans.variable} ${GeistMono.variable}  dark flex flex-col  min-h-screen bg-white dark:bg-black text-black dark:text-white`}
         >
-          {children}
-        </ThemeProvider>
-      </body>
+          <Navbar />
+
+          <main>{children}</main>
+          <Footer />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

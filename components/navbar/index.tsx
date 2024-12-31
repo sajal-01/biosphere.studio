@@ -6,16 +6,14 @@ import {
   MenuItem,
   ProductItem,
 } from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-import ShinyButton from "@/components/ui/shiny-button";
 import ShimmerButton from "../ui/shimmer-button";
 import Link from "next/link";
 
 export default function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className=" fixed top-10 max-w-7xl mx-10 md:mx-auto z-50 grid md:grid-cols-3 grid-cols-2  w-full items-center">
-      <Link href="/" className="text-lg md:text-3xl  font-bold">
+    <div className=" fixed top-10  px-5  md:mx-auto z-50 grid md:grid-cols-3 grid-cols-2   w-full items-center">
+      <Link href="/" className="text-xl md:text-3xl  font-bold">
         Biosphere.Studios
       </Link>
       <div className="hidden md:flex justify-center space-x-4">
@@ -68,7 +66,7 @@ export default function Navbar({ className }: { className?: string }) {
           </MenuItem>
         </Menu>
       </div>
-      <ShimmerButton className="shadow-2xl w-fit justify-self-end">
+      <ShimmerButton className="shadow-2xl w-fit justify-self-end ml-10">
         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
           Contact Us
         </span>
