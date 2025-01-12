@@ -13,61 +13,59 @@ import {
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Custom Website",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Fully tailored websites for businesses, portfolios, or blogs, designed to meet specific client requirements.",
     },
     {
-      title: "Ease of use",
+      title: "E-commerce Platform",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "Online stores with product catalogs, shopping carts, and secure payment systems.",
     },
     {
-      title: "Pricing like no other",
+      title: "Marketing Dashboards",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Custom analytics platforms that display key marketing metrics and campaign performance in real-time.",
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
-    },
-    {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
-    },
-    {
-      title: "24/7 Customer Support",
+      title: "Mobile Applications",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "Native or hybrid apps designed for iOS and Android to enhance customer engagement and accessibility.",
     },
     {
-      title: "Money back guarantee",
+      title: "Web Portals",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "Centralized platforms for users to access personalized information, services, or resources.",
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      title: "SaaS Products",
+      description:
+        "Cloud-based software solutions for recurring services like project management, email marketing, or customer support.",
+    },
+    {
+      title: "Membership or Subscription Platforms",
+      description:
+        "Websites offering exclusive content or services for subscribed members.",
+    },
+    {
+      title: "Event Management Software",
+      description:
+        "Applications to manage virtual or in-person events, including registrations, schedules, and attendee interactions.",
     },
   ];
   return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+    <div
+      id="services"
+      className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto"
+    >
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
+          We offer a wide range of services
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+          From custom websites to mobile applications, we provide a variety of
+          services to help you achieve your goals.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
@@ -82,12 +80,10 @@ export function FeaturesSectionDemo() {
 const Feature = ({
   title,
   description,
-  icon,
   index,
 }: {
   title: string;
   description: string;
-  icon: React.ReactNode;
   index: number;
 }) => {
   return (
@@ -104,9 +100,9 @@ const Feature = ({
       {index >= 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
       )}
-      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
+      {/* <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
         {icon}
-      </div>
+      </div> */}
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">

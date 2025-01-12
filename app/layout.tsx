@@ -6,11 +6,12 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
-
+import FloatingMeetButton from "@/components/buttons/floating-meet";
+import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
-  title: "Biosphere.Studios",
+  title: "Opsolus",
   description:
-    "Biosphere.Studios, unlock speed to market and space to innovate. We're an enteprise agency.",
+    "Opsolus, unlocks speed to market and space to innovate. We're an enteprise agency.",
 };
 
 export default function RootLayout({
@@ -29,9 +30,10 @@ export default function RootLayout({
         <body
           className={`${GeistSans.variable} ${GeistMono.variable}  dark flex flex-col  min-h-screen bg-white dark:bg-black text-black dark:text-white`}
         >
+          <Toaster />
           <Navbar />
-
           <main>{children}</main>
+          <FloatingMeetButton />
           <Footer />
         </body>
       </ThemeProvider>

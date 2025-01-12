@@ -87,7 +87,7 @@ const ReviewCard = ({
 
 const ClientTestimonials = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl">
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-t-lg  bg-background py-20 md:shadow-xl">
       <div className="py-8">
         <h4 className="text-3xl lg:text-6xl lg:leading-tight max-w-7xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           Loved by <span className="text-indigo-500">Entrepreneurs</span>.
