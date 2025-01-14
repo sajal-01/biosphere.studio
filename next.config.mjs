@@ -8,11 +8,15 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "assets.aceternity.com",
+        hostname: "avatar.vercel.sh",
       },
       {
         protocol: "https",
-        hostname: "avatar.vercel.sh",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
     ],
   },

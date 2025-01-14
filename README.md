@@ -1,6 +1,6 @@
-# Biosphere.Studios
+# Biosphere.Studio
 
-## Biosphere.Studios, unlock speed to market and space to innovate. We're an enteprise agency
+## Biosphere.Studio, unlock speed to market and space to innovate. We're an enteprise agency
 
 ### Tech Stack
 

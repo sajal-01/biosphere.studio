@@ -95,7 +95,7 @@ const ClientTestimonials = () => {
         </h4>
         <p className="text-sm lg:text-base max-w-2xl my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
           Businesses of all sizes <span className="text-indigo-500">trust</span>{" "}
-          Biosphere.Studios to launch and grow their products and services.
+          Biosphere.Studio to launch and grow their products and services.
         </p>
       </div>
       <Marquee pauseOnHover className="[--duration:20s]">

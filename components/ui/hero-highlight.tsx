@@ -32,30 +32,8 @@ export const HeroHighlight = ({
         "relative md:min-h-screen h-[30rem]  w-screen flex items-center bg-white dark:bg-black justify-center  group ",
         containerClassName
       )}
-      onMouseMove={handleMouseMove}
     >
-      <div className="absolute inset-0   bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
-      <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
-        style={{
-          WebkitMaskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-          maskImage: useMotionTemplate`
-            radial-gradient(
-              200px circle at ${mouseX}px ${mouseY}px,
-              black 0%,
-              transparent 100%
-            )
-          `,
-        }}
-      />
-
-      <div className={cn("relative z-20", className)}>{children}</div>
+      <div className={cn("relative ", className)}>{children}</div>
     </div>
   );
 };

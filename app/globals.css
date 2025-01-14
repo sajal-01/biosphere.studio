@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  /* scrollbar-width: none;  */
 }
+
+/* html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+} */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,5 +38,31 @@ html {
 @layer base {
   :root {
     --radius: 0.5rem;
+  }
+}
+
+#lights {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+@layer utilities {
+  .animated-text {
+    background: radial-gradient(
+      circle at var(--text-mouse-x) var(--text-mouse-y),
+      var(--gradient-text-center) 10%,
+      var(--gradient-text-edge) 60%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 }
