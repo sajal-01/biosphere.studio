@@ -59,7 +59,15 @@ export const FeatureHeading = ({ title, description, services }: any) => {
         </div>
       </motion.div>
 
-      <motion.div className="grid px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4   z-10  max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0.5, y: 400 }}
+        whileInView={{ opacity: 1, y: 300 }}
+        transition={{
+          duration: 0.5,
+          ease: "easeInOut",
+        }}
+        className="grid  px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4   z-10  max-w-7xl mx-auto"
+      >
         {services.map((feature: any, index: number) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
