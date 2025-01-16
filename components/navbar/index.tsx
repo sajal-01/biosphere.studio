@@ -5,7 +5,7 @@ import NonShimmerButton from "@/components/ui/nav-button";
 
 export default function Navbar() {
   return (
-    <div className=" fixed top-0  bg-opacity-30  w-full backdrop-filter backdrop-blur-sm firefox:bg-opacity-90 md:top-0   px-5 md:px-20  md:mx-auto z-50 ">
+    <div className=" fixed top-0  w-full  md:top-0   px-5 md:px-20  md:mx-auto z-50 ">
       <div className="pt-4 grid md:grid-cols-3 grid-cols-2    w-full items-center">
         <Link href="/" className="text-xl md:text-3xl  font-bold">
           <span className="text-xl md:text-3xl  text-gray-100 font-bold">

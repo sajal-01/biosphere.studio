@@ -50,6 +50,18 @@ const DummyContent = ({ content, link }: any) => {
 
 const data = [
   {
+    category: "Healthcare Services",
+    place: "El Paso, TX",
+    title: "River Valley Pulmonary Consultants",
+    src: "https://res.cloudinary.com/dhknh8hzg/image/upload/v1736793552/3_tct3ph.png",
+    content: (
+      <DummyContent
+        content="Provides exceptional pulmonary, sleep, and critical care services, offering advanced diagnostic procedures and personalized treatments."
+        link="https://www.rivervalleypulmonary.com"
+      />
+    ),
+  },
+  {
     category: "Personal Coaching & Consulting",
     place: "Bengaluru, India",
     title: "Coach Kalpa Kartik",
@@ -75,7 +87,7 @@ const data = [
   },
   {
     category: "Digital Marketing & Growth",
-    place: "India",
+    place: "Kolkata, India",
     title: "Growth Agency",
     src: "https://res.cloudinary.com/dhknh8hzg/image/upload/v1736793552/5_mglsf7.png",
     content: (
@@ -85,18 +97,7 @@ const data = [
       />
     ),
   },
-  {
-    category: "Spiritual & Personal Growth",
-    place: "Bengaluru, India",
-    title: "Deekshma Spiritual Zone",
-    src: "https://res.cloudinary.com/dhknh8hzg/image/upload/v1736793552/6_kgtqnv.png",
-    content: (
-      <DummyContent
-        content="Focuses on spiritual well-being, offering resources and guidance for personal growth and enlightenment."
-        link="https://www.deekshma.com"
-      />
-    ),
-  },
+
   {
     category: "Industrial Packaging",
     place: "Bengaluru, India",
@@ -109,15 +110,16 @@ const data = [
       />
     ),
   },
+
   {
-    category: "Healthcare Services",
-    place: "El Paso, TX",
-    title: "River Valley Pulmonary Consultants",
-    src: "https://res.cloudinary.com/dhknh8hzg/image/upload/v1736793552/3_tct3ph.png",
+    category: "Spiritual & Personal Growth",
+    place: "Bengaluru, India",
+    title: "Deekshma Spiritual Zone",
+    src: "https://res.cloudinary.com/dhknh8hzg/image/upload/v1736793552/6_kgtqnv.png",
     content: (
       <DummyContent
-        content="Provides exceptional pulmonary, sleep, and critical care services, offering advanced diagnostic procedures and personalized treatments."
-        link="https://www.rivervalleypulmonary.com"
+        content="Focuses on spiritual well-being, offering resources and guidance for personal growth and enlightenment."
+        link="https://www.deekshma.com"
       />
     ),
   },
