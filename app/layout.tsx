@@ -46,22 +46,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        enableSystem
-        disableTransitionOnChange
+      <body
+        className={`${GeistSans.variable} ${GeistMono.variable}  dark flex flex-col overflow-x-hidden  min-h-screen bg-white dark:bg-black text-black dark:text-white [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full  [&::-webkit-scrollbar-thumb]:rounded-full  [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-gray-500`}
       >
-        <body
-          className={`${GeistSans.variable} ${GeistMono.variable}  dark flex flex-col  min-h-screen bg-white dark:bg-black text-black dark:text-white [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:rounded-full  [&::-webkit-scrollbar-thumb]:rounded-full  [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-gray-500`}
-        >
-          <Toaster />
-          <Navbar />
-          <main>{children}</main>
-          <FloatingMeetButton />
-          <Footer />
-        </body>
-      </ThemeProvider>
+        <Toaster />
+        <Navbar />
+        <main className="bg-black">{children}</main>
+        <FloatingMeetButton />
+        <Footer />
+      </body>
     </html>
   );
 }

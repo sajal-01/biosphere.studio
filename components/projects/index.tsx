@@ -1,5 +1,6 @@
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { LucideLink } from "lucide-react";
+import RetroGrid from "../ui/retro-grid";
 
 export default function ProjectsShowcase() {
   const cards = data.map((card, index) => (
@@ -7,13 +8,21 @@ export default function ProjectsShowcase() {
   ));
 
   return (
-    <div id="projects" className="w-full h-full py-20">
-      <h2 className="text-xl  px-5 md:text-5xl  font-bold text-gray-100 max-w-6xl md:leading-snug text-center mx-auto ">
-        We develop thoughtful solutions that assist businesses in navigating the
-        digital landscape.
-      </h2>
+    <section
+      id="projects"
+      className="my-10 bg-grid-white/[0.02] bg-black/[0.96] antialiased bg-grid-white/[0.02]  overflow-hidden"
+    >
+      <div className="md:h-[20rem] h-[10rem]  space-y-10 w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+        <RetroGrid />
+        <div className=" p-4 pb-10   max-w-7xl  mx-auto  z-10  w-full ">
+          <h1 className="text-lg h-full pb-5 md:text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b leading-tight from-neutral-50 to-neutral-400 max-w-5xl mx-auto bg-opacity-50">
+            We develop thoughtful solutions that assist businesses in navigating
+            the digital landscape.
+          </h1>
+        </div>
+      </div>
       <Carousel items={cards} />
-    </div>
+    </section>
   );
 }
 

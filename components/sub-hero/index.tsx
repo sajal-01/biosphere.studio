@@ -9,8 +9,8 @@ export default function SubHero() {
       <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
       <div className="relative z-20 md:pt-1 pb-10  pt-20  max-w-7xl mx-auto">
         <div>
-          <h4 className="text-2xl  px-4 md:text-5xl  font-bold text-black max-w-7xl md:leading-snug text-center mx-auto ">
-            We Make Every Client Two Simple Promises
+          <h4 className="text-4xl pb-5 md:text-6xl  font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 tracking-tighter capitalize bg-opacity-50">
+            We make every client two simple promises
           </h4>
           <CalenderBookingButton
             namespace="15min"
@@ -47,15 +47,15 @@ export default function SubHero() {
           </CalenderBookingButton>
           <div
             className={
-              "flex h-full w-full flex-col gap-4 pb-10 mt-10 px-5 md:h-[300px] lg:flex-row"
+              "flex h-full w-full motion-opacity-in-0 motion-translate-y-in-100 motion-ease-spring-smooth motion-blur-in-md flex-col gap-4 pb-10 mt-10 px-5 md:h-[300px] md:flex-row"
             }
           >
             <MagicCard
-              className="cursor-pointer flex-col items-center justify-center  text-center text-4xl shadow-2xl"
+              className="cursor-pointer  flex-col items-center justify-center  text-center text-4xl shadow-2xl"
               gradientColor={"#262626"}
             >
-              <div className="flex items-center text-center flex-col p-5 justify-center space-y-5 md:space-y-10">
-                <div className="flex items-center w-full justify-center space-x-5">
+              <div className="flex items-center text-center flex-col  justify-center space-y-5 md:space-y-10">
+                <div className="flex items-center w-full justify-center text-center   space-x-5">
                   <div className="md:w-10 md:h-10 w-6 h-6 shrink-0 mx-[-1px] bg-purple-500 flex items-center justify-center rounded-full ring-2 ring-gray-300 md:ring-offset-4 ring-offset-2">
                     <span className="md:w-4 md:h-8  md:text-2xl text-lg font-semibold md:font-bold text-white ">
                       1
@@ -67,7 +67,7 @@ export default function SubHero() {
                   </h1>
                 </div>
 
-                <p className="text-[1rem] leading-6  md:text-2xl text-gray-400  md:px-5 text-center">
+                <p className="text-[1rem] leading-6 md:px-5  md:text-2xl text-gray-400   text-center">
                   We&apos;re a team of entrepreneurs that love building. We will
                   make sure you are happy with the results. We&apos;ll work as a
                   team to get there.

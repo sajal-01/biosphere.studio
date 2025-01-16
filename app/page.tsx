@@ -1,19 +1,19 @@
 import { FeaturesSectionDemo } from "@/components/features";
-import WorkFlow from "@/components/workflow";
 import ProjectsShowcase from "@/components/projects";
 import Hero from "@/components/hero";
 import SubHero from "@/components/sub-hero";
+import { TimelineDemo } from "@/components/timeline";
 
 export default function Home() {
   return (
-    <section className="relative ">
-      <article className="relative bg-black">
+    <>
+      <section className="relative">
         <Hero />
         <SubHero />
-      </article>
+      </section>
       <FeaturesSectionDemo />
-      <WorkFlow />
+      <TimelineDemo />
       <ProjectsShowcase />
-    </section>
+    </>
   );
 }

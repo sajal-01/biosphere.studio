@@ -31,7 +31,7 @@ export const hyperspeedPresets = {
       background: 0x000000,
       shoulderLines: 0x131318,
       brokenLines: 0x131318,
-      leftCars: [0x9959f6, 0x7e22ce, 0x6465f1], // Updated color here
+      leftCars: [0x9959f6, 0x7e22ce, 0x6465f1],
       rightCars: [0xfdfdf0, 0xf3dea0, 0xe2bb88],
       sticks: 0xfdfdf0,
     },

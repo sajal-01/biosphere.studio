@@ -4,16 +4,9 @@ import SplitText from "@/components/ui/split-text";
 export default function Footer() {
   return (
     <>
-      <div className="relative overflow-hidden h-full sm:pt-14 pt-8 bg-black text-white">
-        <div className="sm:container  px-4 mx-auto">
-          <div className="md:flex justify-between w-full">
-            <div>
-              <h1 className="md:text-4xl text-2xl font-semibold">
-                Let&lsquo;s do great work together!
-              </h1>
-            </div>
-          </div>
-          <div className=" mt-2 py-5 relative w-full flex items-center justify-center  border-gray-200">
+      <div className="relative overflow-hidden h-full  pt-8 md:pt-20 bg-black text-white">
+        <div className="  px-4 mx-auto">
+          <div className=" mt-2 py-5 md:pt-20 relative w-full flex items-center justify-center  border-gray-200">
             <div className="md:hidden block">
               <SplitText
                 text="Biosphere.Studio"
@@ -32,8 +25,15 @@ export default function Footer() {
             <div className="md:block hidden">
               <AnimatedText
                 text="Biosphere.Studio"
-                className=" text-center    text-purple-500"
+                className=" text-center  text-gray-500 md:text-[10rem] text-[2rem]"
               />
+            </div>
+          </div>
+          <div className="md:flex justify-between w-full">
+            <div>
+              <h1 className="md:text-4xl text-2xl font-semibold">
+                Let&lsquo;s do great work together!
+              </h1>
             </div>
           </div>
           <div className="flex md:flex-row flex-col-reverse gap-3 justify-between pb-2">

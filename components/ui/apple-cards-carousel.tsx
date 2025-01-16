@@ -12,7 +12,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
+import { animate, AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
@@ -91,7 +91,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-      <div className="relative w-full">
+      <div className="relative w-full bg-black">
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
@@ -99,7 +99,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
           <div
             className={cn(
-              "absolute right-0  z-[1000] h-auto  w-[5%] overflow-hidden bg-gradient-to-l"
+              "absolute right-0  z-[1000] h-auto  w-[5%] overflow-hidden "
             )}
           ></div>
 
@@ -154,11 +154,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-const TitleComponent = ({ title }: { title: string }) => (
-  <div className="flex space-x-2 items-center">
-    <p>{title}</p>
-  </div>
-);
 export const Card = ({
   card,
   index,
@@ -249,16 +244,21 @@ export const Card = ({
         )}
       </AnimatePresence>
 
-      {/* <FollowerPointerCard title={<TitleComponent title={card.title} />}> */}
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-xl shadow  shadow-gray-700 bg-black h-[22rem] w-56 md:h-[33rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 group "
+        className="rounded-xl group shadow  shadow-gray-700 bg-black h-[22rem] w-56 md:h-[33rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10 group "
       >
         <div className="relative h-full z-40 md:p-8 p-5 flex flex-col items-start justify-start">
           <motion.p
+            layoutId={layout ? `title-${card.title}` : undefined}
+            className="text-gray-100 group-hover:underline text-[1rem] md:text-3xl leading-tight md:leading-8  font-semibold max-w-sm text-left [text-wrap:balance] font-sans mt-2"
+          >
+            {card.title}
+          </motion.p>
+          <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-gray-200 text-xs md:text-base font-medium font-sans text-left"
+            className="text-gray-300 text-xs md:text-base font-medium font-sans text-left"
           >
             {card.category}
           </motion.p>
@@ -268,22 +268,12 @@ export const Card = ({
           >
             {card.place}
           </motion.p>
-          <motion.p
-            layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-purple-500 text-[1rem] md:text-3xl leading-tight md:leading-8  font-semibold max-w-sm text-left [text-wrap:balance] font-sans mt-2"
-          >
-            {card.title}
-          </motion.p>
-          {/* // view details button */}
-          <motion.span className="text-xs md:block hidden text-left group-hover:text-white text-gray-500 mt-2">
-            View Details
-          </motion.span>
         </div>
         <BlurImage
           src={card.src}
           alt={card.title}
           fill
-          className="object-contain absolute  border-t   rounded-3xl  inset-0"
+          className="object-contain absolute  border-t   rounded-xl  inset-0"
         />
       </motion.button>
     </>

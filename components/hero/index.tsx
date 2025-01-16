@@ -7,7 +7,7 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 export default function Hero() {
   return (
     <div className="text-white  md:h-screen h-[80vh]  overflow-hidden  w-full bg-black  grid place-content-center sticky top-0">
-      <div className="md:h-[80vh] h-[60vh] bottom-0 w-full  absolute z-10">
+      <div className=" bottom-0 w-full h-full  absolute z-10">
         <Hyperspeed />
       </div>
       <div className="overflow-hidden">

@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 
 export const HeroHighlight = ({
@@ -12,24 +12,10 @@ export const HeroHighlight = ({
   className?: string;
   containerClassName?: string;
 }) => {
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
-
-  function handleMouseMove({
-    currentTarget,
-    clientX,
-    clientY,
-  }: React.MouseEvent<HTMLDivElement>) {
-    if (!currentTarget) return;
-    let { left, top } = currentTarget.getBoundingClientRect();
-
-    mouseX.set(clientX - left);
-    mouseY.set(clientY - top);
-  }
   return (
     <div
       className={cn(
-        "relative md:min-h-screen h-[30rem]  w-screen flex items-center bg-white dark:bg-black justify-center  group ",
+        "relative md:min-h-screen h-[30rem]  w-screen flex items-center bg-transparent z-50 justify-center  group ",
         containerClassName
       )}
     >

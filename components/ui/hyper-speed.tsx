@@ -10,9 +10,46 @@ import {
   SMAAEffect,
   SMAAPreset,
 } from "postprocessing";
-import { hyperspeedPresets } from "./presets-three";
 
-const Hyperspeed = ({ effectOptions = hyperspeedPresets.ascension }) => {
+const Hyperspeed = ({
+  effectOptions = {
+    onSpeedUp: () => {},
+    onSlowDown: () => {},
+    distortion: "deepDistortion",
+    length: 400,
+    roadWidth: 18,
+    islandWidth: 2,
+    lanesPerRoad: 3,
+    fov: 90,
+    fovSpeedUp: 150,
+    speedUp: 2,
+    carLightsFade: 0.4,
+    totalSideLightSticks: 50,
+    lightPairsPerRoadWay: 50,
+    shoulderLinesWidthPercentage: 0.05,
+    brokenLinesWidthPercentage: 0.1,
+    brokenLinesLengthPercentage: 0.5,
+    lightStickWidth: [0.12, 0.5],
+    lightStickHeight: [1.3, 1.7],
+    movingAwaySpeed: [60, 80],
+    movingCloserSpeed: [-120, -160],
+    carLightsLength: [400 * 0.05, 400 * 0.15],
+    carLightsRadius: [0.05, 0.14],
+    carWidthPercentage: [0.3, 0.5],
+    carShiftX: [-0.2, 0.2],
+    carFloorSeparation: [0.05, 1],
+    colors: {
+      roadColor: 0x080808,
+      islandColor: 0x0a0a0a,
+      background: 0x000000,
+      shoulderLines: 0x131318,
+      brokenLines: 0x131318,
+      leftCars: [0x9959f6, 0x7e22ce, 0x6465f1],
+      rightCars: [0xfdfdf0, 0xf3dea0, 0xe2bb88],
+      sticks: 0xfdfdf0,
+    },
+  },
+}) => {
   const hyperspeed = useRef(null);
   useEffect(() => {
     const mountainUniforms = {
@@ -346,7 +383,7 @@ const Hyperspeed = ({ effectOptions = hyperspeedPresets.ascension }) => {
         this.camera.position.y = 8;
         this.camera.position.x = 0;
         this.scene = new THREE.Scene();
-        this.scene.background = null;
+        this.scene.background = null; // Ensure scene background is transparent
 
         let fog = new THREE.Fog(
           options.colors.background,
@@ -636,7 +673,7 @@ const Hyperspeed = ({ effectOptions = hyperspeedPresets.ascension }) => {
           let length = random(options.carLightsLength);
           let speed = random(this.speed);
 
-          let carLane = i % options.lanesPerRoad;
+          let carLane = i % options.lanesPerRoad; // Fix lane assignment to spread across lanes
           let laneX =
             carLane * laneWidth - options.roadWidth / 2 + laneWidth / 2;
 
@@ -1044,15 +1081,20 @@ const Hyperspeed = ({ effectOptions = hyperspeedPresets.ascension }) => {
     `;
 
     const roadMarkings_fragment = `
-      uv.y = mod(uv.y + uTime * 0.05, 1.);
+      uv.y = mod(uv.y + uTime * 0.05, 1.);  // Adjust speed of markings
       float laneWidth = 1.0 / uLanes;
       float brokenLineWidth = laneWidth * uBrokenLinesWidthPercentage;
       float laneEmptySpace = 1. - uBrokenLinesLengthPercentage;
 
-      float brokenLines = step(1.0 - brokenLineWidth, fract(uv.x * 2.0)) * step(laneEmptySpace, fract(uv.y * 10.0));
-      float sideLines = step(1.0 - brokenLineWidth, fract((uv.x - laneWidth * (uLanes - 1.0)) * 2.0)) + step(brokenLineWidth, uv.x);
+      float brokenLines = step(1.0 - brokenLineWidth, fract(uv.x * 2.0)) * step(laneEmptySpace, fract(uv.y * 10.0));  // Dashes in the middle
+      float sideLines = step(1.0 - brokenLineWidth, fract((uv.x - laneWidth * (uLanes - 1.0)) * 2.0)) + step(brokenLineWidth, uv.x); // Side continuous lines
 
       brokenLines = mix(brokenLines, sideLines, uv.x);
+      // color = mix(color, uBrokenLinesColor, brokenLines);
+
+      // vec2 noiseFreq = vec2(4., 7000.);
+      // float roadNoise = random(floor(uv * noiseFreq) / noiseFreq) * 0.02 - 0.01; 
+      // color += roadNoise;
     `;
 
     const roadFragment = roadBaseFragment
@@ -1098,7 +1140,7 @@ const Hyperspeed = ({ effectOptions = hyperspeedPresets.ascension }) => {
       const myApp = new App(container, effectOptions);
       myApp.loadAssets().then(myApp.init);
     })();
-  }, [effectOptions]);
+  }, []);
 
   return <div id="lights" ref={hyperspeed}></div>;
 };
