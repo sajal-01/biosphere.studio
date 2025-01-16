@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://biosphere.studio/og-image.jpg",
+        url: "https://biosphere.studio/og-image.png",
         width: 1200,
         height: 630,
         alt: "Biosphere.Studio",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Biosphere.Studio",
     description:
       "Biosphere.Studio specializes in custom web and software solutions for businesses aiming to thrive online.",
-    images: ["https://biosphere.studio/twitter-image.jpg"],
+    images: ["https://biosphere.studio/og-image.png"],
   },
 };
 

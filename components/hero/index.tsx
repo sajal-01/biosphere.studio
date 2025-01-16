@@ -19,7 +19,8 @@ export default function Hero() {
             effectOptions={hyperspeedPresets["ascension"]}
           /> */}
         <Image
-          src="/hero.png"
+          src="/herobackground.png"
+          alt="Hero Background"
           width={1920}
           height={1080}
           objectFit="cover"
