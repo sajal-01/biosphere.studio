@@ -54,8 +54,8 @@ export default function SubHero() {
               className="cursor-pointer  flex-col items-center justify-center  text-center text-4xl shadow-2xl"
               gradientColor={"#262626"}
             >
-              <div className="flex items-center text-center flex-col  justify-center space-y-5 md:space-y-10">
-                <div className="flex items-center w-full justify-center text-center   space-x-5">
+              <div className="flex items-center flex-col p-5 justify-center space-y-5 md:space-y-10">
+                <div className="flex items-center w-full  justify-center space-x-5">
                   <div className="md:w-10 md:h-10 w-6 h-6 shrink-0 mx-[-1px] bg-purple-500 flex items-center justify-center rounded-full ring-2 ring-gray-300 md:ring-offset-4 ring-offset-2">
                     <span className="md:w-4 md:h-8  md:text-2xl text-lg font-semibold md:font-bold text-white ">
                       1

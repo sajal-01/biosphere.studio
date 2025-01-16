@@ -12,14 +12,14 @@ export default function Hero() {
 
   return (
     <div className="text-white  md:h-screen h-[80vh]  overflow-hidden  w-full bg-black  grid place-content-center sticky top-0">
-      <div className=" top-0 w-full  h-1/2  absolute z-10">
+      {/* <div className=" top-0 w-full  h-1/2  absolute z-10">
         <div className="demo-container relative min-h-[800px]  h-full mb-4 cursor-pointer">
           <Hyperspeed
             key={key}
             effectOptions={hyperspeedPresets["ascension"]}
           />
         </div>
-      </div>
+      </div> */}
       <div className="overflow-hidden">
         <HeroHighlight>
           <motion.h1

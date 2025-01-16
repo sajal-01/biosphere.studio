@@ -47,7 +47,7 @@ export const Timeline = ({
           Discovery To Delivery <span className="text-purple-500 px-1">2X</span>{" "}
           Faster
         </h1>
-        <p className="text-sm md:text-2xl max-w-xl py-2 text-gray-400  text-center md:text-left">
+        <p className="text-[1rem] md:text-2xl max-w-xl py-2 text-gray-400  text-center md:text-left">
           {subtitle}
         </p>
       </div>
@@ -68,7 +68,7 @@ export const Timeline = ({
             </div>
 
             <div className="relative max-w-3xl  pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-purple-500">
+              <h3 className="md:hidden block text-4xl mb-4 text-left font-bold text-purple-500">
                 {item.title}
               </h3>
               {item.content}{" "}
