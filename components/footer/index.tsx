@@ -1,5 +1,6 @@
 import AnimatedText from "@/components/ui/animated-text";
 import SplitText from "@/components/ui/split-text";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -41,9 +42,9 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} Biosphere.Studio. All rights
               reserved.
             </span>
-            <a href="#" className="font-semibold">
+            <Link href="/privacy-policy" className="font-semibold">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
