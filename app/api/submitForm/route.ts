@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     console.log("Form data received:", formData);
 
     const externalResponse = await fetch(
-      "https://script.google.com/macros/s/AKfycbxTd1xFXUnrXOGIomNqP8_epTzXBhEt1smyqhqtxjVH5il6DfmbQAnS73RZV6Zl4Nhy/exec",
+      "https://script.google.com/macros/s/AKfycbyVfyxJtRhEUQxY8W58tNCR8bpkLNtzdS36-U7S48_NKyUbwew0U7ShXFx1PfAvi2ql/exec",
       {
         method: "POST",
         body: formData,
@@ -14,6 +14,7 @@ export async function POST(request: NextRequest) {
     );
 
     if (!externalResponse.ok) {
+      console.log(externalResponse.status);
       const errorText = await externalResponse.text();
       return NextResponse.json(
         { message: "Failed to submit form", error: errorText },
