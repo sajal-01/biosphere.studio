@@ -85,7 +85,7 @@ const data = [
       />
     ),
   },
-  {
+  /*{
     category: "Digital Marketing & Growth",
     place: "Kolkata, India",
     title: "Growth Agency",
@@ -96,8 +96,7 @@ const data = [
         content="Provides digital marketing and growth strategies to help businesses expand their online presence and achieve their goals."
       />
     ),
-  },
-
+  */
   {
     category: "Industrial Packaging",
     place: "Bengaluru, India",
