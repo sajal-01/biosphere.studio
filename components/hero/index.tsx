@@ -1,11 +1,9 @@
 //@ts-nocheck
 "use client";
 import { motion } from "framer-motion";
-import Hyperspeed from "@/components/ui/hyper-speed";
 import CalenderBookingButton from "@/components/buttons/calender-booking";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import useForceRerender from "@/hooks/useForceRerender";
-import { hyperspeedPresets } from "../ui/presets-three";
 import Image from "next/image";
 
 export default function Hero() {
@@ -14,17 +12,12 @@ export default function Hero() {
   return (
     <div className="text-white  md:h-screen h-[80vh]  overflow-hidden  w-full bg-black  grid place-content-center sticky top-0">
       <div className=" top-0 w-full  h-full  absolute z-10">
-        {/* <Hyperspeed
-            key={key}
-            effectOptions={hyperspeedPresets["ascension"]}
-          /> */}
         <Image
           src="/herobackground.png"
           alt="Hero Background"
           width={1920}
           height={1080}
-          objectFit="cover"
-          className={`h-full transform object-cover transition duration-200 `}
+          className={`h-full transform object-cover transition duration-200  `}
         />
       </div>
       <div className="overflow-hidden">

@@ -1,6 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -26,7 +23,10 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      colors: {},
+      colors: {
+        "primary5": "#9062d0",
+        "primary95": "#4d2782"
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         marquee: "marquee var(--duration) linear infinite",
@@ -96,6 +96,7 @@ const config: Config = {
   plugins: [
     require("tailwindcss-animate"),
     require("tailwindcss-motion"),
+    require('@tailwindcss/typography'),
     addVariablesForColors,
 
     function ({ addVariant, e, postcss }: any) {

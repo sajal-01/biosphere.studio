@@ -1,53 +1,61 @@
-import AnimatedText from "@/components/ui/animated-text";
-import SplitText from "@/components/ui/split-text";
 import Link from "next/link";
+import TextFancy from "./text-fancy";
 
 export default function Footer() {
   return (
-    <>
-      <div className="relative overflow-hidden h-full  pt-8 md:pt-20 bg-black text-white">
-        <div className="  px-4 mx-auto">
-          <div className=" mt-2 py-5 md:pt-20 relative w-full flex items-center justify-center  border-gray-200">
-            <div className="md:hidden block">
-              <SplitText
-                text="Biosphere.Studio"
-                className="text-3xl font-semibold text-center  text-purple-500"
-                delay={50}
-                animationFrom={{
-                  opacity: 0,
-                  transform: "translate3d(0,50px,0)",
-                }}
-                animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-                easing="easeOutCubic"
-                threshold={0.5}
-                rootMargin="-50px"
-              />
-            </div>
-            <div className="md:block hidden">
-              <AnimatedText
-                text="Biosphere.Studio"
-                className=" text-center  text-gray-500 md:text-[10rem] text-[2rem]"
-              />
-            </div>
+    <div className="pb-2  overflow-hidden relative w-full bg-gray-300  text-black  items-center justify-center h-full">
+
+      <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      <div className="sticky z-0 bottom-2 left-0 w-full h-60 flex justify-center items-center">
+        <div className="relative overflow-hidden w-full h-full flex justify-end md:justify-self-start px-12 text-left items-start py-12 bg-gradient-to-l from-primary5 to-primary95 bg-clip-text text-transparent">
+          <div className="flex flex-row space-x-10 items-start md:space-x-24 text-md md:text-xl">
+            <TextFancy />
+            <ul>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="/">
+                  Home
+                </Link>
+              </li>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="#services">
+                  Services
+                </Link>
+              </li>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="#projects" >
+                  Projects
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="/policy/terms">
+                  Terms
+                </Link>
+              </li>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="/policy/privacy">
+                  Privacy
+                </Link>
+              </li>
+              <li className="hover:underline cursor-pointer  font-normal">
+                <Link href="/policy/foundation">
+                  Foundational
+                </Link>
+              </li>
+
+            </ul>
           </div>
-          <div className="md:flex justify-between w-full">
-            <div>
-              <h1 className="md:text-4xl text-2xl font-semibold">
-                Let&lsquo;s do great work together!
-              </h1>
-            </div>
-          </div>
-          <div className="flex md:flex-row flex-col-reverse gap-3 justify-between pb-2">
-            <span className="font-medium">
-              &copy; {new Date().getFullYear()} Biosphere.Studio. All rights
-              reserved.
-            </span>
-            <Link href="/privacy-policy" className="font-semibold">
-              Privacy Policy
-            </Link>
-          </div>
+          <h2 className="absolute -bottom-2 md:bottom-8  flex flex-col items-start  left-0  -translate-y-1/4 md:translate-y-1/3 md:text-[120px] font-extralight text-[40px] bg-gradient-to-l from-primary5 to-primary95 bg-clip-text text-transparent ">
+            Biosphere.Studio
+          </h2>
+          <h2 className="absolute -bottom-2 md:bottom-2  flex flex-col items-start left-1  -translate-y-1/4 md:translate-y-1/3 text-sm md:text-xl font-extralight  bg-gradient-to-l from-primary5 to-primary95 bg-clip-text text-transparent ">
+            &copy; 2025 Biosphere.Studio
+          </h2>
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 }
+
+
