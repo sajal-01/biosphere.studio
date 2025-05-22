@@ -52,6 +52,7 @@ export default function RootLayout({
         <Navbar />
         <main className="bg-black">{children}</main>
         <FloatingMeetButton />
+
         <Footer />
       </body>
     </html>
