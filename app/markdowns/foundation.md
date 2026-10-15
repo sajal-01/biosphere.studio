@@ -69,7 +69,7 @@ Please ensure your communications include sufficient detail for us to address yo
 For complete contact information, including our mailing address and details concerning grievance resolution, please see our main [Privacy Policy](https://biospherestudio.vercel.app/privacypolicy).
 ________________
 ## **II\. Biosphere Studio Refund Policy**
-Last Updated: April 27, 2025
+Last Updated: April 27, 2026
 
 1. Our Dedication to Service Excellence
 At Biosphere Studio, we are committed to providing superior, bespoke digital product development services tailored to satisfy the distinct requirements and expectations of our clients. Our goal is to create products that our clients can take pride in. Our method of engagement highlights teamwork, openness, and consistent communication, which includes daily updates on progress, to guarantee agreement and contentment during the entire project duration.
@@ -124,7 +124,7 @@ For any inquiries concerning this Refund Policy, please get in touch with us at:
 Please ensure your communications include sufficient detail for us to address your query or request effectively.
 ________________
 ## **III\. Biosphere Studio Referral Program Policy**
-Last Updated: April 27, 2025
+Last Updated: April 27, 2026
 
 1. Introduction to the Biosphere Studio Referral Program
 Biosphere Studio greatly appreciates the connections we establish with our clients. Our Referral Program has been created as a way to express our gratitude when you recommend our digital product development services to your contacts. By bringing new clients to Biosphere Studio, you have the opportunity to receive rewards and simultaneously assist other businesses in reaching their digital objectives.
