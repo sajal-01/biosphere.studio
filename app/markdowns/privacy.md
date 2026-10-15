@@ -13,7 +13,7 @@ By installing or using our Apps, you agree to the practices described here. If y
 
 Biosphere.Studio is the developer of the Apps.
 
-- **Website:** https://[biospherestudio.vercel.app]
+- **Website:** [https://biospherestudio.vercel.app]
 - **Contact email:** [dev.biosphere@gmail.com]
 - **Location:** [Bengalore, KA, IN]
 
@@ -120,7 +120,7 @@ You can request deletion of your account and associated data by:
 
 - Emailing **[dev.biosphere@gmail.com]** from the address linked to your account with the subject "Delete my data", or
 - [In-app: Settings → Account → Delete Account], or
-- Visiting: https://[biospherestudio.vercel.ap]/[delete-account-page]
+- Visiting: [https://biospherestudio.vercel.ap]/[delete-account-page]
 
 We will process verified requests within **[30]** days. Some data may be retained where required by law (for example, billing records).
 
@@ -169,6 +169,6 @@ If you have questions, requests or complaints about this policy or your data:
 
 **Biosphere.Studio**
 Email: [dev.biosphere@gmail.com]
-Website: https://[biopsherestudio.vercel.app]
+Website: [https://biopsherestudio.vercel.app]
 Address: [Karnataka, India]
 Grievance Officer (India): [Rohan B, dev.biopsphere@gmail.com]
