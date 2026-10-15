@@ -37,7 +37,7 @@ const EditableTableHeader: React.FC<React.ThHTMLAttributes<HTMLTableHeaderCellEl
   return (
     <th
       {...props}
-      className="border border-gray-300 bg-gray-50 px-4 py-2 font-semibold cursor-pointer hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800"
+      className="border border-white bg-black px-4 py-2 font-semibold text-white cursor-pointer hover:bg-black"
       onDoubleClick={handleDoubleClick}
     >
       {isEditing ? (
@@ -47,7 +47,7 @@ const EditableTableHeader: React.FC<React.ThHTMLAttributes<HTMLTableHeaderCellEl
           defaultValue={typeof children === 'string' ? children : ''}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="w-full bg-transparent border-none outline-none"
+          className="w-full bg-black text-white border-none outline-none"
         />
       ) : (
         children
@@ -84,7 +84,7 @@ const EditableTableCell: React.FC<React.TdHTMLAttributes<HTMLTableDataCellElemen
   return (
     <td
       {...props}
-      className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800"
+      className="border border-white px-4 py-2 text-white cursor-pointer hover:bg-black"
       onDoubleClick={handleDoubleClick}
     >
       {isEditing ? (
@@ -94,7 +94,7 @@ const EditableTableCell: React.FC<React.TdHTMLAttributes<HTMLTableDataCellElemen
           defaultValue={typeof children === 'string' ? children : ''}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
-          className="w-full bg-transparent border-none outline-none"
+          className="w-full bg-black text-white border-none outline-none"
         />
       ) : (
         children
@@ -109,7 +109,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     table({ children, ...props }: any) {
       return (
         <div className="overflow-x-auto my-4">
-          <table className="min-w-full border-collapse border border-gray-300" {...props}>
+          <table className="min-w-full border-collapse border border-white bg-black text-white" {...props}>
             {children}
           </table>
         </div>
@@ -119,31 +119,31 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     td: EditableTableCell,
     tr({ children, ...props }: any) {
       return (
-        <tr className="hover:bg-gray-50" {...props}>
+        <tr className="text-white hover:bg-black" {...props}>
           {children}
         </tr>
       );
     },
     h1({ children, ...props }: any) {
-      return <h1 className="text-3xl font-bold mb-4 text-gray-900" {...props}>{children}</h1>;
+      return <h1 className="text-3xl font-bold mb-4 text-white" {...props}>{children}</h1>;
     },
     h2({ children, ...props }: any) {
-      return <h2 className="text-2xl font-semibold mb-3 text-gray-800" {...props}>{children}</h2>;
+      return <h2 className="text-2xl font-semibold mb-3 text-white" {...props}>{children}</h2>;
     },
     h3({ children, ...props }: any) {
-      return <h3 className="text-xl font-medium mb-2 text-gray-700" {...props}>{children}</h3>;
+      return <h3 className="text-xl font-medium mb-2 text-white" {...props}>{children}</h3>;
     },
     h4({ children, ...props }: any) {
-      return <h4 className="text-lg font-medium mb-2 text-gray-700" {...props}>{children}</h4>;
+      return <h4 className="text-lg font-medium mb-2 text-white" {...props}>{children}</h4>;
     },
     p({ children, ...props }: any) {
-      return <p className="mb-4 text-gray-700 leading-relaxed" {...props}>{children}</p>;
+      return <p className="mb-4 text-white leading-relaxed" {...props}>{children}</p>;
     },
     ul({ children, ...props }: any) {
-      return <ul className="list-disc list-inside mb-4 space-y-1 text-gray-700" {...props}>{children}</ul>;
+      return <ul className="list-disc list-inside mb-4 space-y-1 text-white" {...props}>{children}</ul>;
     },
     ol({ children, ...props }: any) {
-      return <ol className="list-decimal list-inside mb-4 space-y-1 text-gray-700" {...props}>{children}</ol>;
+      return <ol className="list-decimal list-inside mb-4 space-y-1 text-white" {...props}>{children}</ol>;
     },
     li({ children, ...props }: any) {
       return <li className="ml-4" {...props}>{children}</li>;
@@ -151,7 +151,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
     blockquote({ children, ...props }: any) {
       return (
         <blockquote
-          className="border-l-4 border-blue-500 pl-4 py-2 my-4 bg-blue-50 text-gray-700 italic"
+          className="border-l-4 border-white pl-4 py-2 my-4 bg-black text-white italic"
           {...props}
         >
           {children}
@@ -162,7 +162,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       return (
         <a
           href={href}
-          className="text-blue-600 hover:text-blue-800 underline"
+          className="text-white hover:text-white underline"
           target="_blank"
           rel="noopener noreferrer"
           {...props}
@@ -172,15 +172,15 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {
       );
     },
     strong({ children, ...props }: any) {
-      return <strong className="font-semibold text-gray-900" {...props}>{children}</strong>;
+      return <strong className="font-semibold text-white" {...props}>{children}</strong>;
     },
     em({ children, ...props }: any) {
-      return <em className="italic text-gray-700" {...props}>{children}</em>;
+      return <em className="italic text-white" {...props}>{children}</em>;
     }
   };
 
   return (
-    <div className="prose max-w-none">
+    <div className="prose prose-invert max-w-none bg-black text-white">
       <ReactMarkdown components={components}>
         {content}
       </ReactMarkdown>
