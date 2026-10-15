@@ -5,7 +5,7 @@ This document sets forth the fundamental policies of Biosphere Studio regarding 
 Transparent and easily understandable policies are vital for fostering trust and sustaining open relationships. They act as a guiding resource for our operational methods and legal responsibilities.
 ________________
 ## **I\. Biosphere Studio Cookie Policy**
-Last Updated: April 27, 2025
+Last Updated: April 27, 2026
 
 1. Introduction: Understanding Cookies and Related Technologies
 This Cookie Policy details how Biosphere Studio, referred to as "we," "us," or "our," employs cookies and analogous technologies on our website, biosphere.studio, and associated online services, which together are termed the "Services."
@@ -18,7 +18,7 @@ We utilize cookies for several fundamental reasons, consistently aiming to compl
 *   **Essential Operations (Strictly Necessary Cookies):** Certain cookies are vital for the fundamental operation and security of our website. They support core functionalities such as navigating pages, accessing protected sections, and safeguarding against security risks. These cookies are usually enabled by default because they are crucial for delivering the Services you ask for and typically do not necessitate consent under relevant laws, though we maintain transparency regarding their deployment.
 *   **Performance and Analytics:** We employ these cookies to gain insights into how visitors engage with our Services. They gather data, frequently in an aggregated or pseudonymized form, concerning the most visited pages, the duration of visits, traffic origins, and any errors users may experience. This information assists us in evaluating website performance, pinpointing areas for enhancement, gauging content effectiveness, and ultimately improving the user experience. Such processing aids our legitimate interest in refining our Services, contingent upon your consent where legally mandated.
 *   **Functionality and Preferences:** These cookies enable our website to recall the choices you make (like your preferred language or geographic region) and offer improved, more tailored features. For instance, a cookie might save your language choice so you do not need to specify it on subsequent visits. These cookies contribute to a superior user experience and are deployed based on your agreement.
-*   **Marketing and Advertising (Contingent on Consent):** We may use cookies to discern user interests (often derived from aggregated or anonymized browsing patterns), assess the success of our marketing initiatives, and potentially provide information about our services that could be pertinent to you. Our primary [Privacy Policy](https://biosphere.studio/policy/privacy) offers more extensive information on how data might be used to measure marketing effectiveness. The deployment of cookies for these objectives is strictly dependent on your explicit consent, which is acquired through our consent management system. We are attentive to the limitations imposed by laws like the DPDP Act concerning profiling and targeted advertising, particularly in relation to children.
+*   **Marketing and Advertising (Contingent on Consent):** We may use cookies to discern user interests (often derived from aggregated or anonymized browsing patterns), assess the success of our marketing initiatives, and potentially provide information about our services that could be pertinent to you. Our primary [Privacy Policy](https://biopsherestudio.vercel.app/privacypolicy) offers more extensive information on how data might be used to measure marketing effectiveness. The deployment of cookies for these objectives is strictly dependent on your explicit consent, which is acquired through our consent management system. We are attentive to the limitations imposed by laws like the DPDP Act concerning profiling and targeted advertising, particularly in relation to children.
 The DPDP Act stipulates that processing personal data must have a lawful foundation, with consent being the primary basis for many cookie-related activities. The Draft DPDP Rules further highlight the necessity for detailed descriptions of the data gathered and the specific purposes associated with that data within the consent notification. Our consent process is structured to satisfy these stipulations, ensuring that your agreement is specific to the objectives detailed here and in the consent notification itself.
 
 3. Categories of Cookies We Employ
@@ -56,20 +56,20 @@ You have authority over your cookie preferences. We offer the subsequent methods
 Certain web browsers include a "Do-Not-Track" (DNT) function that informs websites of your preference not to have your online activities monitored. At present, there is no widely adopted industry benchmark for interpreting and reacting to DNT signals. Consequently, similar to many other websites, Biosphere Studio does not currently act upon DNT browser signals or comparable mechanisms that automatically convey a decision against online tracking. We intend to reassess our strategy if a consistent standard is developed and will amend this policy as needed.
 
 7. Connection to Our Privacy Policy
-This Cookie Policy is an integral component of our primary [Privacy Policy](https://biosphere.studio/policy/privacy). For more thorough information regarding how we gather, utilize, retain, and safeguard your personal data, encompassing your entitlements under relevant data protection laws (like the rights to access, amend, and delete your data as per the DPDP Act), our data security practices, and instructions on how to reach us for privacy-related questions or to address grievances, please consult our complete [Privacy Policy](https://biosphere.studio/policy/privacy).
-It is vital to review our main [Privacy Policy](https://biosphere.studio/policy/privacy) in conjunction with this Cookie Policy, as it includes crucial information required by legislation such as the DPDP Act, including specific notification obligations and methods for asserting your rights.
+This Cookie Policy is an integral component of our primary [Privacy Policy](https://biospherestudio.vercel.app/privacypolicy). For more thorough information regarding how we gather, utilize, retain, and safeguard your personal data, encompassing your entitlements under relevant data protection laws (like the rights to access, amend, and delete your data as per the DPDP Act), our data security practices, and instructions on how to reach us for privacy-related questions or to address grievances, please consult our complete [Privacy Policy](https://biospherestudio.vercel.app/privacypolicy).
+It is vital to review our main [Privacy Policy](https://biospherestudio.vercel.app/privacypolicy) in conjunction with this Cookie Policy, as it includes crucial information required by legislation such as the DPDP Act, including specific notification obligations and methods for asserting your rights.
 
 8. Policy Revisions
 We may revise this Cookie Policy periodically to mirror alterations in our procedures or for other operational, legal, or regulatory purposes. Any modifications will be signified by updating the "Last Updated" date at the beginning of this policy. We advise you to examine this policy regularly to remain informed about our use of cookies.
 
 9. How to Reach Us
-Should you have any inquiries regarding our deployment of cookies or this Cookie Policy, please get in touch with us at: **Biosphere Studio Support**, [support@biosphere.studio](mailto:support@biosphere.studio).
+Should you have any inquiries regarding our deployment of cookies or this Cookie Policy, please get in touch with us at: **Biosphere Studio Support**, [dev.biopshere@gmail.com](mailto:dev.biosphere@gmail.com).
 
 Please ensure your communications include sufficient detail for us to address your query or request effectively.
-For complete contact information, including our mailing address and details concerning grievance resolution, please see our main [Privacy Policy](https://biosphere.studio/policy/privacy).
+For complete contact information, including our mailing address and details concerning grievance resolution, please see our main [Privacy Policy](https://biospherestudio.vercel.app/privacypolicy).
 ________________
 ## **II\. Biosphere Studio Refund Policy**
-Last Updated: April 27, 2025
+Last Updated: April 27, 2026
 
 1. Our Dedication to Service Excellence
 At Biosphere Studio, we are committed to providing superior, bespoke digital product development services tailored to satisfy the distinct requirements and expectations of our clients. Our goal is to create products that our clients can take pride in. Our method of engagement highlights teamwork, openness, and consistent communication, which includes daily updates on progress, to guarantee agreement and contentment during the entire project duration.
@@ -119,12 +119,12 @@ Biosphere Studio will acknowledge receipt of the request and will conduct an int
 Biosphere Studio holds the authority to alter this Refund Policy at any moment. Any modifications will take effect straight away once the revised policy is published on our website, as shown by the "Last Updated" date.
 
 11. How to Reach Us
-For any inquiries concerning this Refund Policy, please get in touch with us at:  **Biosphere Studio Support**, [support@biosphere.studio](mailto:support@biosphere.studio).
+For any inquiries concerning this Refund Policy, please get in touch with us at:  **Biosphere Studio Support**, [dev.biopshere@gmail.com](mailto:dev.biosphere@gmail.com).
 
 Please ensure your communications include sufficient detail for us to address your query or request effectively.
 ________________
 ## **III\. Biosphere Studio Referral Program Policy**
-Last Updated: April 27, 2025
+Last Updated: April 27, 2026
 
 1. Introduction to the Biosphere Studio Referral Program
 Biosphere Studio greatly appreciates the connections we establish with our clients. Our Referral Program has been created as a way to express our gratitude when you recommend our digital product development services to your contacts. By bringing new clients to Biosphere Studio, you have the opportunity to receive rewards and simultaneously assist other businesses in reaching their digital objectives.
@@ -181,6 +181,6 @@ Biosphere Studio retains the right to alter, pause, or end this Referral Program
 This Referral Program Policy may be revised from time to time. The "Last Updated" date signifies the most recent version. We recommend that you review this policy periodically.
 
 10. How to Reach Us
-Should you have inquiries about the Biosphere Studio Referral Program, please get in touch with us at:  **Biosphere Studio Support**, [support@biosphere.studio](mailto:support@biosphere.studio).
+Should you have inquiries about the Biosphere Studio Referral Program, please get in touch with us at:  **Biosphere Studio Support**, [dev.biopshere@gmail.com](mailto:dev.biosphere@gmail.com).
 
 Please ensure your communications include sufficient detail for us to address your query or request effectively.

@@ -29,17 +29,17 @@ export default function Footer() {
             </ul>
             <ul>
               <li className="hover:underline cursor-pointer  font-normal">
-                <Link href="/policy/terms">
+                <Link href="/terms">
                   Terms
                 </Link>
               </li>
               <li className="hover:underline cursor-pointer  font-normal">
-                <Link href="/policy/privacy">
+                <Link href="/privacypolicy">
                   Privacy
                 </Link>
               </li>
               <li className="hover:underline cursor-pointer  font-normal">
-                <Link href="/policy/foundation">
+                <Link href="/foundation">
                   Foundational
                 </Link>
               </li>
@@ -47,10 +47,10 @@ export default function Footer() {
             </ul>
           </div>
           <h2 className="absolute -bottom-2 md:bottom-8  flex flex-col items-start  left-0  -translate-y-1/4 md:translate-y-1/3 md:text-[120px] font-extralight text-[40px] bg-gradient-to-l from-primary5 to-primary95 bg-clip-text text-transparent ">
-            Biosphere.Studio
+            Biosphere Studio
           </h2>
           <h2 className="absolute -bottom-2 md:bottom-2  flex flex-col items-start left-1  -translate-y-1/4 md:translate-y-1/3 text-sm md:text-xl font-extralight  bg-gradient-to-l from-primary5 to-primary95 bg-clip-text text-transparent ">
-            &copy; 2025 Biosphere.Studio
+            &copy; 2026 Biosphere Studio
           </h2>
         </div>
       </div>

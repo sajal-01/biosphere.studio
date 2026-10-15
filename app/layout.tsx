@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     title: "Biosphere.Studio",
     description:
       "Biosphere.Studio offers cutting-edge web and software solutions to empower businesses in the digital era.",
-    url: "https://biosphere.studio",
+    url: "https://biospherestudio.vercel.app",
     type: "website",
     images: [
       {
-        url: "https://biosphere.studio/og-image.png",
+        url: "https://biospherestudio.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Biosphere.Studio",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Biosphere.Studio",
     description:
       "Biosphere.Studio specializes in custom web and software solutions for businesses aiming to thrive online.",
-    images: ["https://biosphere.studio/og-image.png"],
+    images: ["https://biospherestudio.vercel.app/og-image.png"],
   },
 };
 

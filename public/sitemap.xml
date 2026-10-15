@@ -1,16 +1,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-<loc>https://biosphere.studio</loc>
+<loc>https://biospherestudio.vercel.app</loc>
 <lastmod>2025-01-29T02:17:59+00:00</lastmod>
 <priority>1.00</priority>
 </url>
 <url>
-<loc>https://biosphere.studio/privacy-policy</loc>
+<loc>https://biospherestudio.vercel.app/privacypolicy</loc>
 <lastmod>2025-01-29T02:17:59+00:00</lastmod>
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://biosphere.studio/app-ads.txt</loc>
+<loc>https://biospherestudio.vercel.app/app-ads.txt</loc>
 <lastmod>2025-01-29T02:18:59+00:00</lastmod>
 <priority>0.80</priority>
 </url>
