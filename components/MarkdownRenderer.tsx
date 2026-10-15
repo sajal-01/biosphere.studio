@@ -155,7 +155,7 @@ const EditableTableHeader: React.FC<React.ThHTMLAttributes<HTMLTableHeaderCellEl
   return (
     <th
       {...props}
-      className="border border-gray-300 px-4 py-2 bg-gray-50 font-semibold cursor-pointer hover:bg-gray-100"
+      className="border border-gray-300 bg-gray-50 px-4 py-2 font-semibold cursor-pointer hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-800"
       onDoubleClick={handleDoubleClick}
     >
       {isEditing ? (
@@ -202,7 +202,7 @@ const EditableTableCell: React.FC<React.TdHTMLAttributes<HTMLTableDataCellElemen
   return (
     <td
       {...props}
-      className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50"
+      className="border border-gray-300 px-4 py-2 cursor-pointer hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800"
       onDoubleClick={handleDoubleClick}
     >
       {isEditing ? (
