@@ -1,7 +1,7 @@
 # Privacy Policy
 
-**Effective date:** [DD Month YYYY]
-**Last updated:** [DD Month YYYY]
+**Effective date:** [01 APR 2025]
+**Last updated:** [8 OCT 2026]
 
 This Privacy Policy explains how **Biosphere.Studio** ("we", "us", "our") collects, uses, shares and protects information when you use our mobile applications available on Google Play, including **[App Name 1]**, **[App Name 2]** and any future apps that link to this policy (together, the "Apps").
 

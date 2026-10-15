@@ -2,7 +2,7 @@
 
 **Preamble**
 
-These Terms and Conditions ("Terms", "Agreement") govern your access to and use of the website [https://biosphere.studio](https://biosphere.studio) (the "Site") operated by Biosphere Studio ("Agency", "We", "Us", "Our"), a digital product development agency located in Bangalore, Karnataka, India, and the procurement of any services ("Services") offered by the Agency.
+These Terms and Conditions ("Terms", "Agreement") govern your access to and use of the website [https://biospherestudio.vercel.app](https://biospherestudio.vercel.app) (the "Site") operated by Biosphere Studio ("Agency", "We", "Us", "Our"), a digital product development agency located in Bangalore, Karnataka, India, and the procurement of any services ("Services") offered by the Agency.
 
 By accessing the Site, requesting a quotation, signing a Statement of Work or Proposal referencing these Terms, making any payment to the Agency, or otherwise engaging the Agency for Services, you ("Client", "User", "You", "Your") agree to be legally bound by these Terms in their entirety. If you do not agree with any part of these Terms, you must not use the Site or engage the Agency's Services. Specific project engagements may be further detailed in a separate Statement of Work ("SOW") or Client Proposal ("Proposal"), which shall incorporate these Terms by reference and form part of the overall Agreement.
 
@@ -36,7 +36,7 @@ To ensure clarity and avoid ambiguity, the following terms shall have the meanin
 | Personal Data Breach | As defined under the DPDP Act: "any unauthorised processing of personal data or accidental disclosure, acquisition, sharing, use, alteration, destruction or loss of access to personal data, that compromises the confidentiality, integrity or availability of personal data". |
 | DPDP Act | The Digital Personal Data Protection Act, 2023, of India, along with any rules, regulations, or amendments issued thereunder. |
 | Data Protection Board (DPB) | The Data Protection Board of India, the adjudicatory body established under the DPDP Act responsible for determining non-compliance and imposing penalties. |
-| Site | The official website of Biosphere Studio, accessible at [https://biosphere.studio](https://biosphere.studio) . |
+| Site | The official website of Biosphere Studio, accessible at [https://biospherestudio.vercel.app](https://biospherestudio.vercel.app) . |
 | SOW / Proposal | A Statement of Work or Client Proposal document detailing the specific Services, Deliverables, timelines, fees, and other project-specific terms agreed upon by the Client and Agency, incorporating these Terms by reference. |
 
 **3\. Services Provided by Biosphere Studio**
