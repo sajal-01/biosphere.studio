@@ -13,14 +13,14 @@ export default function DeleteAccountPage() {
           Account settings
         </p>
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">Delete your account</h1>
-        <p className="mt-5 text-base leading-7 text-gray-600 dark:text-gray-300">
+        <p className="mt-5 text-base leading-7 text-gray-600 dark:text-white">
           You can request permanent deletion of your Biosphere.Studio account and the personal data associated with it.
         </p>
 
         <div className="mt-8 flex flex-col gap-6 border-t border-gray-200 pt-8 dark:border-gray-800">
           <section>
             <h2 className="text-xl font-semibold">How to request deletion</h2>
-            <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
+            <p className="mt-3 leading-7 text-gray-600 dark:text-white">
               Send an email to{" "}
               <a className="font-medium text-blue-600 underline underline-offset-4 hover:text-blue-500 dark:text-blue-400" href="mailto:support@biosphere.studio?subject=Delete%20my%20account">
                 support@biosphere.studio
@@ -31,7 +31,7 @@ export default function DeleteAccountPage() {
 
           <section>
             <h2 className="text-xl font-semibold">What happens next</h2>
-            <p className="mt-3 leading-7 text-gray-600 dark:text-gray-300">
+            <p className="mt-3 leading-7 text-gray-600 dark:text-white">
               We will verify the request and permanently delete your account and associated personal data, except where we are required to retain information by law. Deletion may take up to 30 days to complete.
             </p>
           </section>
