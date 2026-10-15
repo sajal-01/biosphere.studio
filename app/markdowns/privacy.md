@@ -339,7 +339,7 @@ If you have any questions, comments, concerns, or complaints about this Privacy 
 
 Data Protection Contact Person  
 **Biosphere Studio Support**  
-Email: [support@biosphere.studio](mailto:support@biosphere.studio)
+Email: [dev.biopshere@gmail.com](mailto:dev.biosphere@gmail.com)
 
 Please ensure your communications include sufficient detail for us to address your query or request effectively.
 
